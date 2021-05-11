@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilkan Jam</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text.javascript" src="jquery-ui/jquery-ui.min.js"></script>
+    <link rel ="stylesheet" href ="jquery-ui/jquery-ui.min.css" type ="text/css">    
+</head>
+<body>
+    <button id="tampil">Tampilkan Jam</button><br>
+    <span id="tampilanJam"></span>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+       $('#tampil').addClass("important blue");
+       $('#tampilanJam').addClass("important2 grey");
+        $('#tampil').click(function(){
+            setInterval(function(){
+                var date = new Date();
+                $('#tampilanJam').html("Jam Sekarang : "+date.toLocaleTimeString());
+            }, 1000);
+        });
+    });
+</script>
+<style>
+.important {
+    font-weight: bold;
+    font-size: x-large;
+}
+.blue{
+    color:rgb(25, 25, 255);
+}
+.important2 {
+    font-weight: bold;
+    font-size: x-large;
+}
+.grey{
+    color:rgb(87, 82, 82);
+}
+</style>
+</body>
+</html>

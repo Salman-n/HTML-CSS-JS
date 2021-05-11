@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Praktikum 6.3 Menu Button</title>
+    <style>
+        a:link, a:visited{
+            color:#FFFFFF;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover, a:active{
+            background-color: skyblue;
+        }
+        
+        .sosmed #facebook a{
+            background-color: blue;
+            width: 10%;
+            margin-top: 8px;
+        }
+        .sosmed #Instagram a{
+            background-image: radial-gradient(#ff8a00, #e52e71);
+            float: left;
+            position: absolute;
+            margin-top: 8px;
+            top: 0;
+            left: 21%;
+            width: 10%;
+            transform: translateX(-50%);
+        }
+        .sosmed #Github a{
+            background-color : black;
+            width: 10%;
+            position: absolute;
+            margin-top: 8px;
+            top: 0;
+            left: 33%;
+            transform: translateX(-50%);
+        }
+        .sosmed .row{
+           display: block;
+           margin-left: 60px;
+          }
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+          }
+    </style>
+</head>
+<body>
+    <div class="sosmed">
+        <div class="row">
+        <div id="facebook">
+            <a href="https://www.facebook.com/mansal.mansal.39" class="fa fa-facebook"> Facebook</a>
+        </div>
+        </div>
+        <div class="row">
+        <div id="Instagram">
+            <a href="https://www.instagram.com/man_fwezzt/?hl=id" class="fa fa-instagram"> Instagram</a>
+        </div>
+        </div>
+        <div class="row">
+        <div id="Github">
+            <a href="https://github.com/Salman-n" class="fa fa-github"> Github</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
