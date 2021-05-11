@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Form Pendaftaran Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&family=Nunito:wght@600&display=swap');
+</style>
+<body>
+    <div class="konten">
+        <div class="box-kontak">
+            <div class="kiri"></div>
+                <div class="kanan">
+                    <h3 style="text-align:justify">Form Pendaftaran Anggota Perpustakaan</h3>
+                    <form method="POST">
+                    <table>
+                        <tr>
+                            <td>Nama Lengkap</td>
+                            <td> : </td>
+                            <td><input type="text" name="nama" class="field" placeholder="Nama Lengkap...." required></td>
+                        </tr>
+                        <tr>
+                            <td>NIM </td>
+                            <td> : </td>
+                            <td><input type="text" name="NIM"  class="field" placeholder="Nomor Induk Mahasiswa...." required></td>
+                        </tr>
+                        <tr>
+                            <td>TTL</td>
+                            <td> : </td>
+                            <td><input type="date" name="TTL"  class="field" placeholder="Tempat, Tanggal Lahir...." required></td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td> : </td> 
+                            <td>
+                                <input type="radio" name="JK1" value="laki-laki" />Laki-laki
+                                <input type="radio" name="JK2" value="Wanita" />Wanita
+                            </td>
+                            </tr>
+                        <tr>
+                            <td>Agama</td>
+                            <td> : </td>
+                            <td>
+                                <select name="agama"  class="field">
+                                         <option value="Islam"> Islam</option>
+                                         <option value="Kristen"> Kristen</option>
+                                         <option value="Budha"> Budha</option>
+                                         <option value="Hindu"> Hindu</option>
+                                         <option value="Konghuchu"> Konghuchu</option>
+                               </select>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td> : </td>
+                            <td><input type="mail" name="Email"  class="field" placeholder="contoh@gmail.com...." required></td>
+                        </tr>
+                        <tr>
+                            <td>Angkatan Mahasiswa</td>
+                            <td> : </td>
+                            <td>
+                                <select name="Angkatan"  class="field">
+                                <option value="1">2015</option>
+                                <option value="2">2016</option>
+                                <option value="3">2017</option>
+                                <option value="4">2018</option>
+                                <option value="5">2019</option>
+                                <option value="6">2020</option>
+                                <option value="7">2021</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td> : </td>
+                            <td><textarea name="alamat"  class="field" row="3" cols="22" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>No. Telp</td>
+                            <td> : </td>
+                            <td><input type="tel"  class="field" pattern="\(\d\d\d\d\)-\d\d\d\d\d\d\d\d" name="ponsel" placeholder="(9999)-999999999" required></td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td align="center">
+                            <input type="button" name="submit" value="Simpan">
+                            <input type="reset" name="reset" value="Hapus">
+                            </td>
+                           </tr>
+                    </table>
+                </form>
+                </div>
+        </div>
+    </div>
+    <div style="overflow-x:auto;">
+    <center>
+        <table id="Data" border="1" cellpadding="4" cellspacing="4">
+            <tr>
+                
+                    <th>Nama Lengkap</th>
+                    <th>NIM</th>
+                    <th>TTL</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Agama</th>
+                    <th>Email</th>
+                    <th>Angkatan Mahasiswa</td>
+                    <th>Alamat</th>
+                    <th>No.Telp</th>
+                
+            </tr>
+             <tr>
+                
+                    <td>Salman Wiryansyah</td>
+                    <td>K3520070</td>
+                    <td>03/21/2002</td>
+                    <td>Laki-Laki</td>
+                    <td>Islam</td>
+                    <td>man7980fwezzt@gmail.com</td>
+                    <td>2020</td>
+                    <td>Mega Sentul Alamanda Blok P32 Jln. Anthorium II, Ciluar, Bogor, Jawa Barat</td>
+                    <td>083195717254</td>
+                
+            </tr>
+        </table>
+    </center>
+    </div>
+</body>
+</html>
